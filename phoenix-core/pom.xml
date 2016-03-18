@@ -226,6 +226,16 @@
   <dependencies>
     <!-- Make sure we have all the antlr dependencies -->
     <dependency>
+      <groupId>com.guavus.pcsa</groupId>
+      <artifactId>pcsaudf</artifactId>
+      <version>platform5.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.guavus.common</groupId>
+      <artifactId>utility</artifactId>
+      <version>platform5.4</version>
+    </dependency>
+    <dependency>
       <groupId>org.antlr</groupId>
       <artifactId>antlr</artifactId>
     </dependency>

@@ -73,6 +73,7 @@ import org.apache.phoenix.expression.function.MonthFunction;
 import org.apache.phoenix.expression.function.NowFunction;
 import org.apache.phoenix.expression.function.NthValueFunction;
 import org.apache.phoenix.expression.function.OctetLengthFunction;
+import org.apache.phoenix.expression.function.PCSAAggregateFunction;
 import org.apache.phoenix.expression.function.PercentRankAggregateFunction;
 import org.apache.phoenix.expression.function.PercentileContAggregateFunction;
 import org.apache.phoenix.expression.function.PercentileDiscAggregateFunction;
@@ -132,6 +133,7 @@ import com.google.common.collect.Maps;
 // Important : When you want to add new Types make sure to add those towards the end, not changing the existing type's
 // ordinal
 public enum ExpressionType {
+	PCSAAggregateFunction(PCSAAggregateFunction.class),
     ReverseFunction(ReverseFunction.class),
     RowKey(RowKeyColumnExpression.class),
     KeyValue(KeyValueColumnExpression.class),
