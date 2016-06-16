@@ -42,7 +42,7 @@
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <executions>
-          <!-- execution>
+          <execution>
             <id>client</id>
             <phase>package</phase>
             <goals>
@@ -63,7 +63,7 @@
                 <descriptor>src/build/client.xml</descriptor>
               </descriptors>
             </configuration>
-          </execution -->
+          </execution>
           <!-- Due to SPARK-8332 and Calcite's fasterxml dependency, we need a custom spark client -->
           <!-- execution>
             <id>client-spark</id>
@@ -89,7 +89,7 @@
             </goals>
             <configuration>
             <finalName>phoenix-${project.version}</finalName>
-              <attach>false</attach>
+              <attach>true</attach>
               <appendAssemblyId>true</appendAssemblyId>
               <descriptors>
                <!--build the phoenix client jar, but without HBase code. -->
@@ -97,7 +97,7 @@
                <!-- build the phoenix client jar, but without HBase (or its depenencies). -->
                 <descriptor>src/build/client-minimal.xml</descriptor>
                <!-- build the phoenix server side jar, that includes phoenix-hadoopX-compat, phoenix-hadoop-compat and antlr -->
-                <descriptor>src/build/server.xml</descriptor>
+               <!-- descriptor>src/build/server.xml</descriptor -->
               </descriptors>
             </configuration>
           </execution>
