@@ -869,17 +869,17 @@
     </profile>
   </profiles>
   
-	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://mvn-server.neura-local.com/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://mvn-server.neura-local.com/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>    
-  
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://artifacts.guavus.mtl:80/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://artifacts.guavus.mtl:80/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
 </project>
