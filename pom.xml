@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.phoenix</groupId>
   <artifactId>phoenix</artifactId>
-  <version>4.9.0-cdh5.9.1</version>
+  <version>4.9.0-Hbase-1.2-guavus</version>
   <packaging>pom</packaging>
   <name>Apache Phoenix</name>
   <description>A SQL layer over HBase</description>
@@ -1006,4 +1006,18 @@
       </build>
     </profile>
   </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://artifacts.guavus.mtl:80/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://artifacts.guavus.mtl:80/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
 </project>
